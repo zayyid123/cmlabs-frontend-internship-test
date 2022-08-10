@@ -1,10 +1,10 @@
 import React from 'react'
 import './style.scss'
 
-const Detail = () => {
+const DetailCategory = () => {
   return (
     <div className='container'>Detail</div>
   )
 }
 
-export default Detail
+export default DetailCategory

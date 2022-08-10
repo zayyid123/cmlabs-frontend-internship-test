@@ -1,5 +1,6 @@
-import Detail from "../../pages/Detail";
+import DetailCategory from "../../pages/DetailCategory";
 import Home from "../../pages/Home";
+import MealsDetail from "../../pages/MealsDetail";
 
 const list = [
     {
@@ -8,9 +9,14 @@ const list = [
         component: Home,
     },
     {
-        path: "/detail",
-        name: "DETAIL",
-        component: Detail,
+        path: "/detail-category",
+        name: "DETAIL CATEGORY",
+        component: DetailCategory,
+    },
+    {
+        path: "/meals-detail",
+        name: "MEALS DETAIL",
+        component: MealsDetail,
     },
 ];
 
