@@ -2,13 +2,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import list from "../../config/route/listRoute";
 import { Provider } from 'react-redux';
 import { store } from "../../config/redux";
-import './App.css';
+import './style.scss';
+import Navbar from "../../component/navbar";
+import Footer from "../../component/footer";
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
 
+        <Navbar/>
         <Routes >
           {
             list.map((item) =>
@@ -16,6 +19,7 @@ function App() {
             )
           }
         </Routes>
+        <Footer/>
 
       </Router>
 

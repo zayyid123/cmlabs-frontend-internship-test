@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import './style.scss'
 
 const Home = (props) => {
 
@@ -8,7 +9,7 @@ const Home = (props) => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h1>Home {props.data}</h1>
 
       <button onClick={() => handleClick('zayyid')}>click me</button>
