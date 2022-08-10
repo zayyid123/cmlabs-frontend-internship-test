@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const initialStore = {
-    nama_category: 'helo',
+    nama_category: '',
 }
 
 const reducer = (state = initialStore, action) => {

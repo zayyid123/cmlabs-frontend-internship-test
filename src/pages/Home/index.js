@@ -45,7 +45,7 @@ const Home = (props) => {
       <div className='flex flex-wrap items-center justify-center'>
         {
           allData
-            .filter((data) => data.strCategory.toLowerCase().includes(valueSearch.toLowerCase()))
+          .filter((data) => data.strCategory.toLowerCase().includes(valueSearch.toLowerCase()))
           .map((res, index) =>
             <CardCategory key={index} title={res.strCategory} descript={res.strCategoryDescription} image={res.strCategoryThumb} onClick={() => handleClick(res.strCategory)} />
           )

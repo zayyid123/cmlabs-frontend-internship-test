@@ -3,7 +3,7 @@ import './style.scss'
 
 const CardCategory = ({title, descript, image, onClick}) => {
   return (
-    <div className='text-white bg-white shadow-xl rounded-lg w-[320px] m-2 cursor-pointer' onClick={onClick}>
+    <div className='text-white bg-white shadow-xl rounded-lg w-[320px] m-2 cursor-pointer overflow-hidden max-h-[400px] ' onClick={onClick}>
           <img src={image} alt='thumbnail' className='thumbnail'></img>
 
           <div className='bg-slate-500 rounded-b-lg p-5'>

@@ -3,7 +3,9 @@ import './style.scss'
 
 const MealsDetail = () => {
   return (
-    <div>MealsDetail</div>
+    <div className='container'>
+      MealsDetail
+    </div>
   )
 }
 
