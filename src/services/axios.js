@@ -1,4 +1,4 @@
-import { axiosInstance } from "../config/axios/fetchAxos";
+import { axiosInstance } from "../config/axios/fetchAxios";
 
 export const getAllCategories = async () => {
     const response = axiosInstance.get(`categories.php`);

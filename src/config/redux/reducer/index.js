@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const initialStore = {
-    data: 'helo',
+    nama_category: 'helo',
 }
 
 const reducer = (state = initialStore, action) => {
-    if (action.type === 'CHANGE_DATA') {
+    if (action.type === 'CHANGE_NAMA_CATEGORY') {
         return {
             ...state,
-            data: action.value
+            nama_category: action.value
         }
     }
 
