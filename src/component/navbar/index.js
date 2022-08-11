@@ -6,12 +6,11 @@ import './style.scss'
 import menu from '../../assets/icon/menu.svg'
 
 const Navbar = () => {
-  const navMenu = document.querySelector('.navMenu')
-
   const handleClick = () => {
+    const navMenu = document.querySelector('.navMenu')
     if (navMenu.className === 'navMenu show') {
       navMenu.classList.remove('show')
-    }else{
+    } else {
       navMenu.classList.add('show')
     }
   }
