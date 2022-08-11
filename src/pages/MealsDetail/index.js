@@ -64,14 +64,14 @@ const MealsDetail = (props) => {
       <hr/><br/>
 
       <div className='mb-10'>
-        <div className='flex justify-center items-start flex-row'>
+        <div className='flex justify-center items-start flex-col md:flex-row'>
 
-          <div className='w-[50%]'>
+          <div className='w-[100%] md:w-[50%]'>
             <div className='mb-3 font-semibold'>{allData.strArea}</div>
             <img className='bg-cover rounded-lg' src={allData.strMealThumb} alt='thumbnail meals'></img>
           </div>
 
-          <div className='w-[50%] pl-4 pt-8'>
+          <div className='w-[100%] md:w-[50%] pl-4 pt-8'>
             <div className='font-semibold text-2xl mb-4'>Intructions</div>
             <div className='mb-5'>{allData.strInstructions}</div>
             <div className='font-semibold text-2xl mb-4'>Recipes</div>
@@ -89,7 +89,7 @@ const MealsDetail = (props) => {
 
       <div className='mb-10 flex justify-center flex-col items-center'>
         <div className='font-semibold text-2xl mb-4'>Tutorial</div>
-        <iframe className='myVideo' width="560" height="315" samesite={'none'} src={ytVideo} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe className='myVideo md:w-[500px] md:h-[280px] lg:w-[700px] lg:h-[400px]' samesite={'none'} src={ytVideo} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
   )
