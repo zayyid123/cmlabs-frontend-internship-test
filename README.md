@@ -17,3 +17,5 @@ Masuk ke folder yang sudah di clone dengan perintah cd cmlabs-frontend-internshi
 setelah usai lalu ketikkan pada terminal npm start
 
 ## `atau anda bisa mencobanya langsung di sini`
+
+https://cmlabs-frontend-internship-test-eight.vercel.app/
