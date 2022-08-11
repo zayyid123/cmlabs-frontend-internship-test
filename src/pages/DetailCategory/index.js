@@ -35,7 +35,8 @@ const DetailCategory = (props) => {
     setvalueSearch(e.target.value)
   }
   
-  const handleClick = () => {
+  const handleClick = (id_meals) => {
+    props.changeIdMeals(id_meals)
     navigate('/meals-detail')
   }
 
@@ -62,7 +63,7 @@ const DetailCategory = (props) => {
           allData
           .filter((data) => data.strMeal.toLowerCase().includes(valueSearch.toLowerCase()))
           .map((res, index) => 
-            <CardCategory title={res.strMeal} image={res.strMealThumb} descript={null} onClick={handleClick}/>
+            <CardCategory key={index+'detailCategory'} title={res.strMeal} image={res.strMealThumb} descript={null} onClick={() => handleClick(res.idMeal)}/>
           )
         }
       </div>
@@ -74,4 +75,8 @@ const reduxState = (state) => ({
   nama_category: state.nama_category
 })
 
-export default connect(reduxState, null)(DetailCategory)
+const reduxDispatch = (dispatch) => ({
+  changeIdMeals: (id_meals) => dispatch({ type: 'CHANGE_ID_MEALS', value: id_meals })
+})
+
+export default connect(reduxState, reduxDispatch)(DetailCategory)
